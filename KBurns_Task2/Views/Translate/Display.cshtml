@@ -1,0 +1,42 @@
+﻿@model KBurns_Task2.Models.Translate
+
+@{
+    ViewBag.Title = "Display";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css"/>
+</head>
+<h2>Display Pig Latin</h2>
+<hr />
+<!--<section class="border-bottom">
+    <table name="table">-->
+ <!--CHANGE TO DIV FOR DESIGNER CHOICE-->
+<!--<tr>
+            <td class="fw-bold">@*Html.LabelFor(m => m.EnglishText)*@</td>
+            <td>@*Html.DisplayFor(m => m.PigLatinText)*@</td>
+        </tr>
+    </table>
+</section>-->
+
+<section>
+    <div class="row">
+        <div class="col-md-6 fw-bold custom-width">
+            @Html.LabelFor(m => m.EnglishText)
+        </div>
+        <div class="col-md-6 border-bottom">
+            @Html.DisplayFor(m => m.EnglishText)
+        </div>
+    </div>
+</section>
+<br />
+<section>
+    <div class="row">
+        <div class="col-md-6 fw-bold custom-width">
+            @Html.LabelFor(m => m.PigLatinText)
+        </div>
+        <div class="col-md-6 border-bottom">
+            @Html.DisplayFor(m => m.PigLatinText)
+        </div>
+    </div>
+</section>
+

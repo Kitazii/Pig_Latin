@@ -1,0 +1,25 @@
+﻿@model KBurns_Task2.Models.Translate
+
+@{
+    ViewBag.Title = "Translation";
+}
+
+<h2>Translate english to Pig Latin</h2>
+<hr />
+<h4>Enter the text in english:</h4>
+<hr />
+<br />
+
+@using (Html.BeginForm())
+{
+    <section class="col-md-6">
+        <table name="table">
+            <tr>
+                <td class="p-4 fw-bold">@Html.LabelFor(m => m.EnglishText)</td>
+                <td>@Html.EditorFor(m => m.EnglishText)</td>
+            </tr>
+        </table>
+        <input name="table" type="submit" value="translate" />
+    </section>
+}
+

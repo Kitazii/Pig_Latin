@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row bg-grey border-opacity-75 p-5 m-4 text-center">
+        <h1 id="title">Translate English To Pig Latin</h1>
+    </section>
+
+    <div class="row">
+        <section class="col-md-5 m-4" aria-labelledby="instructionsTitle">
+            <h2 id="instructionsTitle">Instructions</h2>
+            <p>
+                The user enters text in the first multi-line text box and
+                clicks the Translate button or presses the Enter key. the
+                application translates the text to Pig Lating and displays it
+                in the second multi-line text box. To clear both text boxes
+                the user clicks the Clear button.
+            </p>
+        </section>
+        <section class="col-md-5 m-4" aria-labelledby="specificationsTitle">
+            <h2 id="specificationsTitle">Specifications</h2>
+            <ul>
+                <li>If a word starts with a vowel, just add way to the
+                end of the word.</li>
+                <li>If a word starts with a consonant, move the
+                consonants before the first vowel to the end of the word and add ay.</li>
+                <li>If a word starts with the letter Y, the Y should be
+                treated as a consonant. If the Y appears anywhere
+                else in the word, it should be treated as a vowel.</li>
+                <li>Keep the case of the original word whether it's
+                uppercase (TEST), title case (Test) or lowercase (test).</li>
+                <li>Keep all punctuation at the end of the translated</li>
+            </ul>
+        </section>
+    </div>
+</main>
